@@ -1,0 +1,25 @@
+{%extends "home.html"%}
+
+<html>
+
+{%block content%}
+
+<p>Facial recognition pictures being taken, please stay still and try to look straight at the camera...
+  <p>
+<table border="1">
+  {% for key, value in result.items()%}
+  <tr>
+      <th>
+        {{key}}
+      </th>
+      <td>
+        {{value}}
+      </td>
+  </tr>
+  {% endfor %}
+
+
+{% endblock %}
+
+
+</html>
