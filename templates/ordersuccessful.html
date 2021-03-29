@@ -1,0 +1,14 @@
+{%extends "home.html" %}
+
+{% block content %}
+<center>
+<h2> Order Successful </h2>
+  <p>
+    Please wait at counter for order
+  </p>
+  <p>
+    Total price: ${{price}}.00
+  </p>
+  <a href="http://127.0.0.1:5000/orderfood">Start Another Order</a>
+</center>
+{% endblock %}
